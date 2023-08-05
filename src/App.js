@@ -44,7 +44,7 @@ const App = () => {
       setError(null);
       setCity('');
     } catch (error) {
-      setError('Fehler beim Abrufen der Wetterdaten: ' + error.message);
+      setError('Bitte die Eingabe überprüfen.');
     }
   };
 
