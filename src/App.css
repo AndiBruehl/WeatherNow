@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.background {
+  background: rgb(2,2,20);
+  background: linear-gradient(137deg, rgba(2,2,20,1) 31%, rgba(5,47,96,1) 64%, rgba(119,85,183,1) 100%);
+  height: 100vh; /* Stellt sicher, dass der Background den gesamten Bildschirm ausfüllt */
+  width: 100vw; /* Stellt sicher, dass der Background den gesamten Bildschirm ausfüllt */
+  position: fixed; /* Stellt sicher, dass der Background beim Zoomen der Seite nicht verändert wird */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Stellt sicher, dass der Background hinter dem restlichen Inhalt liegt */
+}
