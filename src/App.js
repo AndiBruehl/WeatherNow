@@ -51,17 +51,17 @@ const App = () => {
   const getWeatherIcon = (description) => {
     switch (description) {
       case 'Clear':
-        return < img src='sun.png' alt='sonnig' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/sun.png'} alt='sonnig' style={{ width: '80px', height: '80px' }} />;
       case 'Clouds':
-        return < img src='overcastClouds.png' alt='Starkbewölkt' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/overcastClouds.png'} alt='Starkbewölkt' style={{ width: '80px', height: '80px' }} />;
       case 'Rain':
-        return < img src='raindrop.png' alt='Regen' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/raindrop.png'} alt='Regen' style={{ width: '80px', height: '80px' }} />;
       case 'Snow':
-        return < img src='snow.png' alt='Schnee' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/snow.png'} alt='Schnee' style={{ width: '80px', height: '80px' }} />;
       case 'Thunderstorm':
-        return < img src='storm.png' alt='Gewitter' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/storm.png'} alt='Gewitter' style={{ width: '80px', height: '80px' }} />;
       default:
-        return < img src='cloudy.png' alt='wolkig' style={{ width: '80px', height: '80px' }} />;
+        return <img src={process.env.PUBLIC_URL + '/img/cloudy.png'} alt='wolkig' style={{ width: '80px', height: '80px' }} />;
     }
   };
 
