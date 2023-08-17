@@ -10,6 +10,7 @@ import SendIcon from '@mui/icons-material/Send';
 import '@fontsource/roboto/500.css';
 import './App.css';
 import Footer from './footer.js'
+import Cities from './Cities.js'
 
 
 const API_KEY = '384e601cb35001ae545fd783e37b5db0'; // Dein OpenWeatherMap API-Schlüssel
@@ -72,6 +73,7 @@ const App = () => {
           <Typography variant="h1" fontFamily="Playfair Display" style={{ marginBottom: '30px', color: '#90caf9', marginTop: '30px' }}>
             WeatherNow
           </Typography>
+          <Cities />
           <TextField
             InputProps={{
               style: {
